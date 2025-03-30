@@ -1,0 +1,702 @@
+body{
+    background-color: #0f0f0f;
+    margin: 0;
+    height: 100vh;
+    padding: 60px 16px 0px 90px;
+}
+.barre{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    position: fixed; /* Fixe la barre en haut */
+    top: 0;
+    left: 0;
+    padding: 8px;
+    width: 100dvw;
+    background-color: #0f0f0f; /* Fond noir pour la barre */
+    z-index: 9999; /* Place la barre devant tout */
+}
+.droite
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo
+{
+    position: relative;
+    display: inline-block;
+}
+
+.play-button {
+    position: absolute;
+    top: 47%;
+    left: 68%;
+    width: 10px; /* Largeur du triangle */
+    height: 10px; /* Hauteur du triangle */
+    background-color: white; /* Couleur blanche */
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%); /* Crée un triangle */
+    transform: translate(-50%, -50%);
+}
+
+.texty
+{
+    font-size: 20px, sans-serif;
+    font-weight: bold;
+    color: white;
+    font-family: 'Roboto';
+}
+
+.pays
+{
+    font-size: 10px;
+    color: rgb(125, 125, 125);
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+}
+
+.recherche{
+    display: flex;
+    align-items: center;
+}
+
+.rec{
+    border: none;
+    padding: 0 4px 0 16px;
+    font: 10px;
+    background: transparent; /* Fond transparent */
+    color: white; /* Texte blanc */
+    outline: none;
+    height: 40px;
+    width: 536px;
+}
+
+.brec
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border: 1px solid rgba(114, 114, 114, 0.523);;
+    position: relative; 
+    border-radius: 20px;
+}
+
+.fa-solid 
+{
+    position: absolute;
+    pointer-events: none;
+}
+
+.fa-magnifying-glass
+{
+    right: 0px;
+    border: none;border-top-right-radius: 20px;border-bottom-right-radius: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    font-size: 20px;
+    height: 40px;
+    width: 64px;
+}
+
+.fa-microphone
+{
+    top: 17px;
+}
+
+.info_div{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    padding: 8px;
+}
+
+.dc
+{
+    width: 80px;
+    height: 32px;
+    margin: 1px;
+    margin-right: 1px;
+    border-radius: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    
+}
+
+.cloche
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0%;
+}
+.compte
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0%;
+}
+
+.plus
+{
+    font-size: 25px;
+    color: white;
+}
+.ct
+{
+    font-size: 14px;
+    color: white;
+}
+
+.select
+{
+    padding: 0px 12px;
+    height: 32px;
+    width: auto;
+    white-space: nowrap;
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(44, 44, 44, 0.523);
+    color: white;
+}
+
+.tout
+{
+    background-color: white;
+    color: black;
+}
+
+.select:hover 
+{
+    background-color: rgba(114, 114, 114, 0.523) !important;
+}
+
+.cree
+{
+    width: 80px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0%;
+    margin-right:1px ;
+    background-color: rgba(114, 114, 114, 0.523);
+    border-radius: 20px;
+}
+
+.info
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    margin-left: 20px;
+    padding: 0%;
+}
+
+.mic
+{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    background-color: rgba(114, 114, 114, 0.523);
+    border-radius: 50%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mic:hover
+{
+    background-color: rgba(188, 187, 187, 0.523)!important;
+}
+
+.cloche :hover
+{
+    width: 40px;
+    height: 30px;
+    background-color: rgba(188, 187, 187, 0.523);
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+.cree:hover
+{
+    background-color: rgba(188, 187, 187, 0.523);
+    border-radius: 20px;
+}
+
+.info:hover
+{
+    background-color: rgba(188, 187, 187, 0.523);
+    border-radius: 50%;
+}
+
+.re{
+    width: 20px;
+    height: 2px;
+    margin: 2px;
+    background-color: white;
+}
+
+.p{ 
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 24px;
+    margin-right: 45px;
+
+}
+
+.r{
+    width: 32px;
+    height: 32px;
+    margin: 1px;
+    border-radius: 50%;
+    background-color: rgb(41, 41, 41);
+}
+
+.hb{
+    width: 4rem;
+    height: 100vh;
+    padding: 0 15px;
+    margin-top: -3px;
+    position: fixed;
+    left: 0;
+    height: 100vh;
+    background-color: #0f0f0f;
+    z-index: 9999; /* Place la barre devant tout */
+}
+
+.dbarre
+{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    width: 91vw;
+    margin-top: -5px;
+    padding-left: 15px;
+    background-color: #0f0f0f;
+    gap: 12px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    z-index: 9999;
+}
+
+.accueil
+{
+    width: 64px;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0%;
+    gap: 10px;
+
+}
+.shorts
+{
+    width: 64px;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0%;
+    gap: 10px;
+
+}
+.abb
+{
+    width: 64px;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0%;
+    gap: 10px;
+
+}
+.vous
+{
+    width: 64px;
+    height: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0%;
+    gap: 35px;
+
+}
+
+.accueil:hover
+{
+    background-color: rgba(188, 187, 187, 0.523);
+    border-radius: 5px;
+}
+.shorts:hover
+{
+    background-color: rgba(188, 187, 187, 0.523);
+    border-radius: 5px;
+}
+.abb:hover
+{
+    background-color: rgba(188, 187, 187, 0.523);
+    border-radius: 5px;
+}
+.vous:hover
+{
+    background-color: rgba(188, 187, 187, 0.523);
+    border-radius: 5px;
+}
+
+.ush
+{
+    width: 20px;
+    height: 20px;
+    background-image:url(assets/image/shp.png) ;background-size: cover;
+}
+
+.ba
+{
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background-color: white;
+    border-color: white;border-top-left-radius: 5px;border-top-right-radius: 5px;
+    top: -5px;
+    left: 1px;
+}
+
+.reca
+{
+    position: relative;
+    height: 14px;
+    width: 20px;
+    border-color: white;border-radius: 1px;
+    box-shadow: 0px 0px 0px 2px rgb(255 255 255);
+
+}
+.playb
+{
+    position: absolute;
+    top: 7px;
+    left: 11px;
+    width: 8px; /* Largeur du triangle */
+    height: 8px; /* Hauteur du triangle */
+    background-color: white; /* Couleur blanche */
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%); /* Crée un triangle */
+    transform: translate(-50%, -50%);
+}
+
+.ru
+{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 38px;
+    top: 238px;
+    border-color: white;border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px rgb(255 255 255);
+    overflow: hidden;
+}
+
+.rd
+{
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    left: 7px;
+    top: 4px;
+    border-color: white;border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px rgb(255 255 255);
+}
+.rt
+{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: -2 px;
+    top: 14px;
+    border-color: white;border-radius: 50%;
+    box-shadow: 0px 0px 0px 2px rgb(255 255 255);
+}
+
+.c1
+{
+    font-size: 12px;
+    color: white;
+}
+.c2
+{
+    font-size: 12px;
+    color: white;
+}
+.c3
+{
+    font-size: 12px;
+    color: white;
+}
+.c4
+{
+    font-size: 12px;
+    color: white;
+}
+
+.page
+{
+    display: flex;
+    flex-direction: row;
+}
+.all-page
+{
+    height: 100vw;
+}
+.fy
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-rows: auto auto auto;
+    /*grid-template-columns: repeat(auto-file, minmax(370px,1fr));
+    grid-template-rows: repeat(auto-file, minmax(208px,1fr));*/
+    gap: 15px;
+    width: 90vw; 
+    padding-left: 20px;
+    margin-top: 60px;
+}
+
+.vfy
+{
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+.vidl
+{
+    height: 208px;
+    width: auto;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+}
+
+.vidl:hover
+{
+    height: 208px;
+    width: auto;
+    grid-template-columns: 1fr;
+    cursor: pointer;
+}
+
+.vid
+{
+    background-size: cover;
+    height: 208px;
+    grid-template-columns: 1fr;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.un{
+    background-image: url(assets/image/image.png);
+}
+.un:hover
+{
+    background-image: url(assets/image/image.png);
+    border-radius: 0%;
+}
+
+.de{
+    background-image: url(assets/image/v2.png);
+}
+.de:hover
+{
+    background-image: url(assets/image/v2.png);
+    border-radius: 0%;
+}
+
+
+.tr{
+    background-image: url(assets/image/v3.png);
+}
+.tr:hover
+{
+    background-image: url(assets/image/v3.png);
+    border-radius: 0%;
+}
+
+.qu{
+    background-image: url(assets/image/v4.png);
+}
+.qu:hover
+{
+    background-image: url(assets/image/v4.png);
+    border-radius: 0%;
+}
+
+.ci{
+    background-image: url(assets/image/v5.png);
+}
+.ci:hover
+{
+    background-image: url(assets/image/v5.png);
+    border-radius: 0%;
+}
+
+.si{
+    background-image: url(assets/image/v6.png);
+}
+.si:hover
+{
+    background-image: url(assets/image/v6.png);
+    border-radius: 0%;
+}
+
+.se{
+    background-image: url(assets/image/v7.png);
+}
+.se:hover
+{
+    background-image: url(assets/image/v7.png);
+    border-radius: 0%;
+}
+
+.hu{
+    background-image: url(assets/image/v8.png);
+}
+.hu:hover
+{
+    background-image: url(assets/image/v8.png);
+    border-radius: 0%;
+}
+
+.ne{
+    background-image: url(assets/image/v9.png);
+}
+.ne:hover
+{
+    background-image: url(assets/image/v9.png);
+    border-radius: 0%;
+}
+
+.infov
+{
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+.des
+{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.titre
+{
+    display: flex;
+    color: white;
+    margin: 0%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.id
+{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaa;
+}
+
+.rp
+{
+    width: 36px;
+    height: 36px    ;
+    margin: 1px;
+    border-radius: 50%;
+    background-color: rgb(41, 41, 41);
+    background-size: cover;
+}
+.u{background-image: url(assets/image/u.png);}
+.d{background-image: url(assets/image/d.png);}
+.t{background-image: url(assets/image/t.png);}
+.q{background-image: url(assets/image/4.png);}
+.c{background-image: url(assets/image/c.png);}
+.s{background-image: url(assets/image/s.png);}
+.sep{background-image: url(assets/image/sep.png);}
+.h{background-image: url(assets/image/h.png);}
+.n{background-image: url(assets/image/n.png);}
+
+.vu
+{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaa;
+}
+
+.heur
+{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaa;
+}
+.minia
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+.url
+{
+    height: 208px;
+    width: 370px;;
+    border-radius: 10px;
+}
+
+.video-title::after {
+    display: none !important;
+}
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+/* fr (fraction) est une unité en CSS Grid qui représente une fraction de l’espace disponible.
+1fr veut dire "prends autant d’espace que possible" après que toutes les colonnes aient atteint leur minimum.
+*/
