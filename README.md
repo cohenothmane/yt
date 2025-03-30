@@ -1,4 +1,4 @@
 # yt
 creation d'un clone de yt par coco
 
-j'ai voulue mettre les video avec java scipt mais ça na pas marcher
+j'ai voulue mettre les video qui deffile quand on passe le cursueur avec java scipt mais je n'ai pas réussi, donc la premier miniature est une video en pause
